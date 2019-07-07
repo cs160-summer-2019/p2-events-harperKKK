@@ -63,7 +63,26 @@
 
 
 <script type="text/javascript">
-	// your solution here
+  $( ".bg-purple" ).click(function() {
+    $( ".bg-purple" ).hide();
+  });
+  
+  $( ".bg-green" ).click(function() {
+    $( ".bg-green,.bg-blue" ).hide();
+  });
+  
+  $( ".bg-orange.p2-border" ).click(function() {
+    $( ".bg-orange.p2-border" ).hide();
+    $( this ).show();
+  });
+  
+  $( "#gradient-circle" ).hover(function() {
+    $( this ).hide();
+  });
+  
+  $( "button" ).click(function() {
+    $( ".p2-circle" ).show();
+  });
 
 </script>
 </body>
